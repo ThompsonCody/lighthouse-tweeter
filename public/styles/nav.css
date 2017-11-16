@@ -1,0 +1,19 @@
+#nav-bar{
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  z-index: 100000;
+  max-height: 80px;
+  height:100%;
+  color: #e8fdff;
+  background: #247ba0;
+  width:100%;
+  padding:0 2em;
+}
+
+nav > * {margin: 0 5px;}
+
+#nav-bar .logo{
+  width:80px; height:80px;
+} #logo-path{fill: #f0f0f0; stroke: #fff;}
+#nav-bar h1{font-weight: 400; color:#fff;}
