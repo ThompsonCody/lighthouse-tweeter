@@ -16,6 +16,11 @@ section.new-tweet{
   border-bottom: 1px solid;
 }
 
+section.new-tweet{
+  display:none;
+   /*toggle via jquery -> slidedown -> focus*/
+}
+
 section.new-tweet .tweet-template{
   background: #4B8178; color:#fff;
   padding: 1em;

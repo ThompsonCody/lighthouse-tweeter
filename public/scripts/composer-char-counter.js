@@ -7,8 +7,9 @@ $(() => {
 
 function charCount(){
   let counter = $(this)
-    .parents(".container")
+    .parents(".new-tweet")
     .find(".counter");
+
   let length = $(this).val().length,
       maxValue = 140;
 

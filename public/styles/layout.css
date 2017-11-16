@@ -19,6 +19,8 @@ html {
   box-sizing: inherit;
 }
 
+button, input[type=submit]{cursor: pointer;}
+
 /*
  * Global layout stuff
  */
