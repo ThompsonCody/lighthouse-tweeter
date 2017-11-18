@@ -19,7 +19,7 @@ $(() => {
         tweetUserName = tweet.user.name,
         tweetAvatar =   tweet.user.avatars.small,
         tweetHandler =  tweet.user.handle,
-        tweetFooter =   new Date(tweet.created_at);
+        tweetFooter =  moment(tweet.created_at).fromNow();
 
     const $tweet =
       `
@@ -55,15 +55,11 @@ $(() => {
 
   loadTweets();
 
-
   //TOGGLE TWEET COMPOSE
   $('#toggle-compose').on("click", function(event) {
     $(".new-tweet").slideDown();
     $(".compose-text").focus();
   });
-
-
-
 
   //Post from tweet compose
   $('#tweet-compose').on("submit", function(event) {
@@ -81,7 +77,7 @@ $(() => {
       });
     } else {
 
-      //validation goes here
+      //more validation goes here
         //--form should not clear textarea, despite error
     }
 

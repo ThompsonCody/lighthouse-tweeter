@@ -9,15 +9,21 @@
 */
 
 @import url("nav.css");
-@import url("new-tweet.css");
+@import url("tweets.css");
 
 html {
   box-sizing: border-box;
   font-family: 'Roboto Condensed', sans-serif;
 }
+
+*{
+  transition: all .25s ease-in-out;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
 
 button, input[type=submit]{cursor: pointer;}
 
@@ -25,7 +31,12 @@ button, input[type=submit]{cursor: pointer;}
  * Global layout stuff
  */
 
-.flex{display:flex;}
+.flex{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
 
 html {
   min-height: 100vh;
@@ -37,7 +48,6 @@ body {
   background-color: #eee;
   height: auto;
   flex-direction:column;
-  /*align-items:center;*/
 }
 
 /*
@@ -50,10 +60,20 @@ body {
 
  main.container{
   max-width:450px;
-  width:100%;
   background: #f4f4f4;
-  margin: 0 auto; padding: 0 2.5em;
+  margin: 0 auto; padding: 100px 2em 0;
   flex-direction: column;
-  align-items: center;
  }
 
+ #nav-bar, main.container, section.all-tweets header{
+  width:100%;
+  display:inherit;
+ }
+
+#nav-bar, section.all-tweets header{
+  align-items:center;
+}
+
+nav #toggle-compose, section.all-tweets .tweet header span{
+  border-radius: 5px;
+}
