@@ -2,4 +2,15 @@
 
 $blue: #247ba0;
 $green: #77cebf;
+$grey:#eee;
 $off-white: #f4f4f4;
+
+//Fonts
+$base-font:sans-serif;
+$fixed-font:'Roboto Condensed';
+//-font weights
+$light:300;
+$reg:400;
+$bold:700;
+
+@import "flex"

@@ -1,0 +1,17 @@
+@import "partials/base";
+
+@import "partials/typography";
+
+//------
+
+html{
+  min-height: 100vh;
+
+  body{
+    margin: 0;
+    color: #244751;
+    background-color:$grey;
+    height:auto;
+    @include flex-direction(column);
+  }
+}

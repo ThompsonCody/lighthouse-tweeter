@@ -1,13 +1,13 @@
 {
   "name": "tweeter",
   "version": "1.0.0",
-  "description": "A twitter clone by Lighthouse Labs for web bootcamp students to learn front-end dev skillz",
+  "description": "A twaater clone by Lighthouse Labs for web bootcamp students to learn front-end dev skillz",
   "main": "server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/index.js",
     "local": "./node_modules/.bin/nodemon --watch server -e js server/index.js",
-    "scss": "node-sass --ouput-style expanded -o public/ "
+    "scss": "./node_modules/node-sass/bin/node-sass --ouput-style expanded -o public/styles/ public/styles/scss "
   },
   "author": "Lighthouse Labs",
   "license": "ISC",
