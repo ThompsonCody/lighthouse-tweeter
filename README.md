@@ -2,6 +2,9 @@
 
 Tweeter is a simple, single-page web app Twitter clone
 
+!['Composing']( https://github.com/ThompsonCody/lighthouse-tweeter/blob/master/docs/compose-section.png )
+!['Tweets']( https://github.com/ThompsonCody/lighthouse-tweeter/blob/master/docs/tweets.png )
+
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
